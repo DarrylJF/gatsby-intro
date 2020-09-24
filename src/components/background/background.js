@@ -7,8 +7,8 @@ import backgroundStyles from './background.module.scss'
 const Background = () => {
   return (
       <div className={backgroundStyles.background}>
-        <BackgroundGrey/>
-        <Footer/>
+        <BackgroundGrey />
+        <Footer />
       </div>
   )
 }
