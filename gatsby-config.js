@@ -1,10 +1,19 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+const path = require('path')
 
 module.exports = {
+  siteMetadata: {
+    title: "Test Title"
+  },
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-sass',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    { resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `media`,
+        path: `${__dirname}/src/media/`,
+      },
+    },
+  ],
 }

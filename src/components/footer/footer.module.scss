@@ -1,0 +1,32 @@
+.footer {
+  padding: 3.125rem 0;
+  color: #fff;
+  background: #171717;
+  width: 100%;
+}
+
+.contain {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.875rem;
+}
+
+.footer-company-details {
+  font-size: 0.8rem;
+}
+
+.col-text-center {
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+
+@media (min-width: 1140px) {
+  .contain {
+    padding: 0;
+    width: 1080px;
+  }
+  .col-text-right {
+    text-align: right;
+  }
+}

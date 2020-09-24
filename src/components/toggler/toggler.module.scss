@@ -1,0 +1,11 @@
+.toggler {
+  color: #fff;
+  font-size: 2em;
+}
+
+
+@media (min-width: 1024px) {
+  .toggler {
+    display: none;
+  }
+}

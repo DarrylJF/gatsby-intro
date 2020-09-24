@@ -1,14 +1,14 @@
-import React from "react"
-import { Link } from "gatsby"
-import Header from "../components/header"
+import React from 'react'
+import Layout from '../components/layout/layout'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../styles/style.scss'
 
-export default function Home() {
+const Index = () => {
   return (
-    <div style={{ color: `purple` }}>
-      <Link to="/contact/">Contact</Link>
-      <Header headerText="Hello Gatsby!"/>
-      <p>What a world.</p>
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
-    </div>
-  );
+    <Layout>
+      <h1>Home Page</h1>
+    </Layout>
+  )
 }
+
+export default Index;
