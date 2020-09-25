@@ -8,5 +8,36 @@
 
 .contact-info {
   text-align: center;
+  display: flex;
+  justify-content: center;
   font-weight: 700;
+  .row {
+    justify-content: center;
+  }
+  svg {
+    margin: 0 auto 1.25rem;
+    height: 30px!important;
+    width: 30px!important;
+    color: #e53333
+  }
+  h4 {
+    margin-bottom: 1.5rem;
+  }
+  a {
+    color: #111;
+    display: block;
+  }
+  .marks {
+    color: #e53333
+  }
+  .flex-column {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+@media (max-width: 1023px) {
+  .contact-info > div {
+    margin-top: 1.875rem;
+  }
 }

@@ -9,7 +9,7 @@ import Background from "../background/background"
 
 
 
-const Layout = () => {
+const Layout = (props) => {
 
   const [showSideDrawer, setShowSideDrawer] = useState(false);
 
@@ -26,6 +26,9 @@ const Layout = () => {
     <div>
       <Header open={sideDrawerOpenHandler}/>
       <SideDrawer show={showSideDrawer} close={sideDrawerCloseHandler}/>
+      <main>
+        {props.children}
+      </main>
       <Background/>
     </div>
   )
