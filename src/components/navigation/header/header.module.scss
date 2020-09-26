@@ -27,12 +27,10 @@
     li:not(:last-child) {
       margin: 0 30px;
     }
+    a{
+      color:#111;
+    }
   }
-}
-
-.active-menu-item {
-  text-decoration: underline;
-  color: red;
 }
 
 @media (min-width: 1024px) {

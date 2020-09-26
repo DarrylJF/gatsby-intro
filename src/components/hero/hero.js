@@ -22,6 +22,7 @@ const Hero = (props) => {
                 <p>
                   {props.data}
                 </p>
+                {props.children}
               </Col>
               <Col sm={props.sm2} md={props.md2}>
                 <Img fluid={props.image}/>
