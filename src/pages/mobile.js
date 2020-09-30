@@ -1,7 +1,8 @@
 import React from "react"
 import Layout from '../components/layout/layout'
 import Hero from '../components/hero/hero'
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import Button from '../components/mobileButton/button'
 
 const Mobile = () => {
   const data = useStaticQuery(
@@ -18,6 +19,7 @@ const Mobile = () => {
       }
  `
   )
+
   return (
     <Layout>
       <Hero
@@ -28,7 +30,14 @@ const Mobile = () => {
         sm={7}
         md2={6}
         sm2={5}>
-        <button>Button</button>
+        <Button
+          title="Call Us"
+          size="lg"/>
+        <Link to="/order/">
+          <Button
+            title="Order Online"
+            size="lg"/>
+        </Link>
       </Hero>
     </Layout>
   )

@@ -1,0 +1,19 @@
+.bg {
+  padding: 100px 0;
+  .row {
+    justify-content: center;
+    .col-center {
+      text-align: center;
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .marks {
+    color: #e53333;
+  }
+  .card {
+    background: #fafafa;
+    margin-bottom: 1.5rem;
+  }
+}

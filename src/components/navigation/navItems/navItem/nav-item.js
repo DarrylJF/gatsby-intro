@@ -6,7 +6,7 @@ const NavItem = (props) => {
 
   return (
     <li className={navItemStyles.navItem}>
-      <Link to={props.link} activeClassName={navItemStyles.activeMenuItem}>
+      <Link to={props.link} className={navItemStyles.menuItem} activeClassName={navItemStyles.activeMenuItem}>
         {props.children}
       </Link>
     </li>
